@@ -1,0 +1,24 @@
+{% extends 'home/home_template.html' %}
+
+{%block tab%}
+<aside class="tab">
+    <button class="tablinks" onclick="openHomeTab(event, 'Main')">Main</button>
+    <button class="tablinks" onclick="openHomeTab(event, 'Explore')">Explore</button>
+    <button class="tablinks" onclick="openHomeTab(event, 'Create')">Create</button>
+</aside>
+{%endblock%}
+
+{%block tab_content%}
+<div id="Create" class="tabcontent">
+    <h3>Create</h3>
+    <p>какой-то текст</p>
+</div>
+<div id="Explore" class="tabcontent">
+    <h3>Explore</h3>
+    <p>какой-то текст</p>
+</div>
+<div id="Main" class="tabcontent">
+    <h3>Main</h3>
+    <p>какой-то текст</p>
+</div>
+{%endblock%}

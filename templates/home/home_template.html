@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Fenrir</title>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+</head>
+<body>
+	<header>
+		<h1>Fenrir</h1>
+		<button class="button_login">Log In</button>
+	</header>
+	<main>
+		<div class="body_home">
+			<div>{%block tab%}{%endblock%}</div>
+			<div>{%block tab_content%}{%endblock%}</div>
+		</div>
+	</main>
+	<script src="{{url_for('static', filename='js/home.js')}}"></script>
+</body>
+</html>
+
